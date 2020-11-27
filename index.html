@@ -1,0 +1,83 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<title>hobbies website</title>
+</head>
+<body bgcolor='Bisque'>
+
+<h1 style="background-color:violet;">Know about my hobbies</h1>
+<p style="border: 2px solid BlueViolet;">Hello everyone!I am Nouloshi.I am 11 years old studying in Tagore International school.In this website you are going to be knowing the hobbies I am fond of.</p>
+
+
+<img src="img_picasso.jpg" alt="picasso"width ="700" height="600" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color:#ffffff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color:#cc00cc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color:yellow;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<h2 style="background-color:Orange;">HOBBIES</h2>
+
+<button class="accordion">SWIMMING</button>
+<div class="panel">
+  <p >
+I love swimming.I started to get trained for swimming in the age of 4 while I was living in Chennai.After that when we shifted to Delhi I started continuing my training in JNU campus as a begginer.Then after sometime when my father realised that I was capable of swimming by myself he asked my teachers to move my position in the seniors pool where I can practice by myself so that is how I loved and learnt swimming!!</p>
+
+</div>
+
+<button class="accordion">DANCING</button>
+<div class="panel">
+  <p >I love to dance.I started learning Bharatnatyam in Chennai when I was 4 years old.</p>
+<img src="img_photowithGuruji.jpg" alt="photowithGuruji"width ="300" height="400" >
+
+</div>
+
+<button class="accordion">READING AND LISTENING TO MUSIC</button>
+<div class="panel">
+  <p>I love reading like anything.Whenever I read any thing I get absorbed in a lot.I read types of books which can gain my interest in it.Sometimes by getting ideas from these books I write my own stories.Now for listening music I listen to mis which has good beats and good lyrics and music.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<p style="background-color:Tomato;">THANKS TO READ MY WEBSITE.I HOPE YOU GOT TO KNOW ABOUT THE HOBBIES I LOVE TO DO.</p>
+ 
+</body>
+</html>
